@@ -1,0 +1,12 @@
+asciigit
+========
+
+Simple ascii Zsh prompt that has prompt information
+with git. Forked from cemsbr.
+
+
+Changes
+-------
+
+* Does not depend on perl.
+* Shows return_code.
