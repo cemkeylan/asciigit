@@ -30,7 +30,7 @@ function git_or_pwd() {
        }
 
       url="$(git remote get-url --push $remote \
-	      | sed -E 's/^(https?|git)(:\/\/|@)//g;s/\.git//g;s/:/\//g')"
+	      | sed -E 's/^(https?|git)(:\/\/)//g;s/\.git//g;s/:/\//g;s/.*@//')"
       echo "%{$fg[blue]%}$url%{$reset_color%}$relative_dir|$branch_prompt%{%F{14}%}$(git_remote_status)$(git_prompt_status)%{$reset_color%}"
       return
     fi
