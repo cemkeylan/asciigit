@@ -10,3 +10,4 @@ Changes
 
 * Does not depend on perl.
 * Shows return_code.
+* Shows 'name:working-dir' when out of git repository
