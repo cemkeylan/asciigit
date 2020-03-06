@@ -35,7 +35,7 @@ function git_or_pwd() {
       return
     fi
   fi
-  echo '%~'
+  echo '%n:%~'
   return
 }
 
